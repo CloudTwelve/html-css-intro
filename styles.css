@@ -1,1 +1,35 @@
 /* Add css styling for the css half of the website, inshaAllah
+*/
+* {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 200px;
+    max-height: 10vh;
+    min-height: 40px;
+    width: 100%;
+    background: linear-gradient(0deg, pink, hotpink, aliceblue, mediumturquoise, orchid, deeppink);
+    animation: gradient-animation 2s ease infinite;
+    background-size: 100% 200%;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+  }
+    50% {
+      background-position: 100% 50%;
+  }
+    100%{
+      background-position: 0% 50%;
+  }
+}
