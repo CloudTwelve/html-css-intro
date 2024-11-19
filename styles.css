@@ -1,35 +1,77 @@
 /* Add css styling for the css half of the website, inshaAllah
 */
 * {
-    text-align: center;
-    list-style-position: inside;
-  }
+  text-align: center;
+  list-style-position: inside;
+}
+
+html {
+scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
+margin: 0;
+background: aliceblue;
 }
 
 header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    height: 200px;
-    max-height: 10vh;
-    min-height: 40px;
-    width: 100%;
-    background: linear-gradient(0deg, pink, hotpink, aliceblue, mediumturquoise, orchid, deeppink);
-    animation: gradient-animation 2s ease infinite;
-    background-size: 100% 200%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  position: sticky;
+  top: 0;
+  height: 200px;
+  max-height: 10vh;
+  min-height: 40px;
+  max-width: 100%;
+  background: linear-gradient(90deg, pink, hotpink, mediumturquoise, orchid, deeppink);
+  animation: gradient-animation 6s ease infinite;
+  background-size: 300% 400%;
+  background-position: 0%;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+a {
+text-decoration: none;
+padding: 10px;
+}
+
+.title {
+border-radius: 50px;
+background-color: aliceblue;
+box-shadow: 3px 3px 9px midnightblue;
+min-width: 10%;
+max-width: 30%;
+height: 75%;
+font-family: 'Inter', sans-serif;
+font-weight: 600;
+display: flex;
+}
+
+.text {
+margin: auto;
+text-align: center;
+}
+
+.boring-dec {
+display: block;
+width: 100%
 }
 
 @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-  }
-    50% {
-      background-position: 100% 50%;
-  }
-    100%{
-      background-position: 0% 50%;
-  }
+  0% {
+    background-position: 0% 50%;
+}
+  50% {
+    background-position: 100% 50%;
+}
+  100%{
+    background-position: 0% 50%;
+}
 }
