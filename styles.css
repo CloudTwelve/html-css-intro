@@ -33,8 +33,9 @@ header {
 
 nav {
 display: flex;
-justify-content: space-between;
-align-items: center;
+justify-content: space-around !important;
+min-width: 20% !important;
+max-width: 40% !important;
 }
 
 a {
@@ -49,7 +50,7 @@ box-shadow: 3px 3px 9px midnightblue;
 min-width: 10%;
 max-width: 30%;
 height: 75%;
-font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-weight: 600;
 display: flex;
 }
