@@ -1,93 +1,120 @@
 /* Add css styling for the css half of the website, inshaAllah
 */
 * {
-  text-align: center;
-  list-style-position: inside;
+    text-align: center;
+    list-style-position: inside;
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-margin: 0;
-color: aliceblue;
-background: rgb(41, 41, 51);
+  margin: 0;
+  color: aliceblue;
+  background: rgb(41, 41, 51);
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px 5px 20px;
-  position: sticky;
-  top: 0;
-  height: 200px;
-  max-height: 10vh;
-  min-height: 40px;
-  max-width: 100%;
-  background: linear-gradient(90deg, pink, hotpink, mediumturquoise, orchid, deeppink);
-  animation: gradient-animation 6s ease infinite;
-  background-size: 300% 400%;
-  background-position: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    position: sticky;
+    top: 0;
+    height: 200px;
+    max-height: 10vh;
+    min-height: 40px;
+    max-width: 100%;
+    background: linear-gradient(90deg, pink, hotpink, mediumturquoise, orchid, deeppink);
+    animation: gradient-animation 6s ease infinite;
+    background-size: 300% 400%;
+    background-position: 0%;
 }
 
 nav {
-display: flex;
-justify-content: space-around !important;
-min-width: 20% !important;
-max-width: 40% !important;
+  display: flex;
+  justify-content: space-around !important;
+  min-width: 20% !important;
+  max-width: 40% !important;
 }
 
 a {
-color: inherit;
-text-decoration: none;
-padding: 10px;
-font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
 }
 
 .title {
-border-radius: 50px;
-background-color: aliceblue;
-color: rgb(26, 0, 51);
-box-shadow: 3px 3px 9px midnightblue;
-min-width: 10%;
-max-width: 30%;
-height: 75%;
-font-family: 'Monaco', monospace;
-font-weight: 700;
-display: flex;
-align-items: center;
-justify-content: center;
+  border-radius: 50px;
+  background-color: aliceblue;
+  color: rgb(26, 0, 51);
+  box-shadow: 3px 3px 9px midnightblue;
+  min-width: 10%;
+  max-width: 30%;
+  height: 75%;
+  font-family: 'Monaco', monospace;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {
-padding: 10px;
+  padding: 10px;
 }
 
 .boring-dec {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2em;
-width: 100%;
-min-height: 10vh;
-max-height: 30vh; 
-background: linear-gradient(90deg, pink, hotpink, mediumturquoise, orchid, deeppink);
-animation: gradient-animation 5s ease-in-out infinite;
-background-position: right;
-background-size: 200% 500%;
-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  width: 100%;
+  min-height: 10vh;
+  max-height: 30vh; 
+  background: linear-gradient(90deg, pink, hotpink, mediumturquoise, orchid, deeppink);
+  animation: gradient-animation 5s ease-in-out infinite;
+  background-position: right;
+  background-size: 200% 500%;
+  color: white;
 }
 
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
+    0% {
+      background-position: 0% 50%;
+  }
+    50% {
+      background-position: 100% 50%;
+  }
+    100%{
+      background-position: 0% 50%;
+  }
 }
-  50% {
-    background-position: 100% 50%;
+
+.hoverhere:hover {
+  background: linear-gradient(90deg, pink, hotpink, mediumturquoise, orchid, deeppink);
+  background-size: 300% 400%;
+  background-position: 0%;
+  animation: gradient-animation 5s ease-in-out infinite;
 }
-  100%{
-    background-position: 0% 50%;
+
+.font-h1 {
+  font-family: "Courier";
 }
+
+.pinkh3 {
+  color: pink;
+}
+
+.bigpara {
+  font-size: 3rem;
+}
+
+.fwb {
+  font-weight: 800;
+}
+
+.fwi {
+  font-style: italic;
 }
